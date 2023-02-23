@@ -1,12 +1,12 @@
 <div align="center" id="top"> 
   <img src="./.github/app.gif" alt="I_have_a_question" />
 
-  &#xa0;
+&#xa0;
 
   <!-- <a href="https://i_have_a_question.netlify.com">Demo</a> -->
 </div>
 
-<h1 align="center">I_have_a_question</h1>
+<h1 align="center">I have a question</h1>
 
 <p align="center">
   <img alt="Principal linguagem do projeto" src="https://img.shields.io/github/languages/top/kacyos/i_have_a_question?color=56BEB8">
@@ -26,11 +26,11 @@
 
 <!-- Status -->
 
-<!-- <h4 align="center"> 
+<h4 align="center"> 
 	🚧  I_have_a_question 🚀 Em construção...  🚧
-</h4> 
+</h4>
 
-<hr> -->
+<hr>
 
 <p align="center">
   <a href="#dart-sobre">Sobre</a> &#xa0; | &#xa0; 
@@ -44,17 +44,17 @@
 
 <br>
 
-## :dart: Sobre ##
+## :dart: Sobre
 
-Sobre o seu projeto
+i_have_a_question é uma plataforma de perguntas e respostas desenvolvida com o objetivo de permitir que usuários façam perguntas e recebam respostas de outros usuários. O projeto foi criado utilizando as seguintes tecnologias.
 
-## :sparkles: Funcionalidades ##
+## :sparkles: Funcionalidades
 
 :heavy_check_mark: Funcionalidade 1;\
 :heavy_check_mark: Funcionalidade 2;\
 :heavy_check_mark: Funcionalidade 3;
 
-## :rocket: Tecnologias ##
+## :rocket: Tecnologias
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
@@ -64,11 +64,11 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [React Native](https://reactnative.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
 
-## :white_check_mark: Pré requisitos ##
+## :white_check_mark: Pré requisitos
 
 Antes de começar :checkered_flag:, você precisa ter o [Git](https://git-scm.com) e o [Node](https://nodejs.org/en/) instalados em sua maquina.
 
-## :checkered_flag: Começando ##
+## :checkered_flag: Começando
 
 ```bash
 # Clone este repositório
@@ -86,10 +86,9 @@ $ yarn start
 # O app vai inicializar em <http://localhost:3000>
 ```
 
-## :memo: Licença ##
+## :memo: Licença
 
 Este projeto está sob licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
-
 
 Feito com :heart: por <a href="https://github.com/kacyos" target="_blank">Cacio de Castro</a>
 
