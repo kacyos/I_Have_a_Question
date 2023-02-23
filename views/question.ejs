@@ -1,48 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="stylesheet" href="/css/bootstrap.min.css" />
-    <script src=""></script>
-    <link rel="stylesheet" href="/css/style.css" />
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-      defer
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-      defer
-    ></script>
-    <script defer src="/js/bootstrap.min.js"></script>
-    <title>I Have a Question!</title>
-  </head>
-
+  <%- include("partials/header.ejs")%>
   <body>
-    <div class="container">
-      <div class="container-logo">
-        <img class="container-logo_image" src="/img/logo.png" />
-        <h1 class="container-logo_title">I Have a Question!</h1>
-      </div>
-
-      <h3 class="question_title">Realizar pergunta</h3>
-
-      <form>
-        <label>Título</label>
-        <input class="form-control mb-4" type="text" placeholder="Título" />
-        <label>Descrição</label>
+    <%- include("partials/navbar.ejs")%>
+    <div class="container mt-5">
+      <section class="border-top border-bottom border-primary">
+        <h1><%= question.title %></h1>
+        <p>
+          <%= question.description %>
+        </p>
+      </section>
+      <form class="mt-5" method="post" action="/answer">
+        <h3>Responda</h3>
+        <label class="mt-3">Resposta:</label>
         <textarea
-          class="form-control mb-4"
-          placeholder="Descreva sua pergunta."
+          name="body"
+          cols="12"
+          placeholder="Digite sua resposta"
+          class="form-control"
+          rows="10"
         ></textarea>
-        <button class="btn btn-primary">Perguntar</button>
+        <input
+          type="hidden"
+          readonly
+          name="questionId"
+          value="<%=question.id%>"
+        />
+        <button type="submit" class="btn btn-primary mt-3">Responder</button>
       </form>
+      <section class="mt-4">
+        <h3 class="border-top border-bottom border-primary p-2 mb-4">
+          Respostas
+        </h3>
+        <% answers.forEach(answer => { %>
+        <div class="card mb-4">
+          <div class="card-body">
+            <p><%=answer.body%></p>
+          </div>
+        </div>
+        <% }); %>
+      </section>
     </div>
   </body>
 </html>
